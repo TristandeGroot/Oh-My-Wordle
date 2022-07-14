@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>OMW! Learn More</title>
+<meta charset="utf-8" />
+
+<!-- Bootstrap library inclusions -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<!-- Set style -->
+<link rel="stylesheet" href="/styles.css"/>
+
+<style>
+   
+   /* Button apperance values */
+    .button {
+        background-color: #f50606; 
+        border: black;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+    /* Different text colours */
+    .Greentext { 
+        color: green;
+      }
+    .Yellowtext { 
+        color: yellow;
+      }
+    .GreyText {
+        color: grey;
+      }
+      /* Setting backround image */
+      body {
+    background-image: url('css/images/MenuBackround.jpg');
+    font-family: "Georgia", Times, serif;
+    }
+    </style>
+
+</head>
+<body class="body2">
+    <div class="container">
+        <!-- Image card -->
+        <br>
+        <br>
+        <div class="card bg-primary mb-3" >
+        <div class="text-center my-4">
+            <h1 id="heading">OMW! About us</h1>
+            <br>
+        </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="card bg-white mb-3" >
+        <div class="text-center my-4">
+            <h4 id="heading">This game was created by:</h4>
+            <br>
+            <h4 id="heading">Tristan de Groot</h4>
+            <br>
+            <h4 id="heading">Keri-Lee Carstens</h4>
+            <br>
+            <h4 id="heading">Maria Botha</h4>
+            <br>
+            <h4 id="heading">Mohammed Raees Haffejee</h4>
+            <br>
+            <h4 id="heading">Zunaid Valodia</h4>
+            <br>
+
+           <br>
+           <h4 id="heading">We hope you enjoy our game and have fun playing wordle with your friends!!!</h4>
+        
+        </div>
+    </div>
+    <button style = "position:absolute; right:80px; bottom:20px;" class="button" id="Back" name="backButton">Back</button>        
+             <!-- Back Button position bottom right -->
+            
+</body>
+
+<!-- JS script to run with ejs file -->
+<script>
+const Backbutton= document.getElementById('Back')
+
+//Back button destination
+Backbutton.addEventListener('click', function () {
+    window.location.href = ("/home");
+}, false)
+
+</script>
+
+
+</html>
